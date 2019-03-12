@@ -1,0 +1,8 @@
+python_speech_features
+google-api-python-client
+tqdm
+pysrt>=1.0.1
+progressbar2
+six>=1.11.0
+
+

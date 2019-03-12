@@ -1,0 +1,5 @@
+google-api-python-client>=1.4.2
+requests>=2.3.0
+progressbar2
+pysrt>=1.0.1
+six>=1.11.0

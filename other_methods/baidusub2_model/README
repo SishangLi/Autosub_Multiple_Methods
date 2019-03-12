@@ -1,0 +1,13 @@
+1，首先安装依赖项：
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
+2，使用CPU
+安装paddlepaddle==1.1.0
+pip install paddlepaddle==1.1.0
+paddlepaddle会把numpy降到1.14.0，需要手动将numpy切换到1.16.0 否则会报错。
+   使用GPU
+安装paddlepaddle-gpu==0.11.0.post87
+cudnn=7.2.1 cuda=9.2  
+（此版本搭配可以成功运行，其他搭配未知，请自行尝试。）
+使用GPU时，需要将infer 中的  add_arg设置为   ('use_gpu', bool, True, "Use GPU or not.")
+安装
+3，执行 sh setup.sh安装包swig_decoder

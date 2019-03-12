@@ -1,0 +1,7 @@
+scipy==0.13.1
+resampy==0.1.5
+SoundFile==0.9.0.post1
+python_speech_features
+pysrt>=1.0.1
+progressbar2
+six>=1.11.0
