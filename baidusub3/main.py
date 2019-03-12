@@ -18,8 +18,8 @@ from urllib.error import URLError
 from urllib.parse import urlencode
 timer = time.perf_counter
 
-API_KEY = '4brKeEDaGTzSn9AbmXR0B6gs'
-SECRET_KEY = 'FAoMX8GofXvdiA0XXBAOE7GE3yKftIyI'
+API_KEY = ''
+SECRET_KEY = ''
 
 
 def which(program):
