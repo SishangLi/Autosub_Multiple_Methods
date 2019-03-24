@@ -34,12 +34,15 @@ other_methods:
 加入系统环境变量即可，测试方法:在命令行输入"ffmpeg -h"可以打印帮助信息表示ffmpeg安装成功。
 
 2，当前代码均是在linux版本下运行，强烈建议在linux下运行，若需要在windows上运行版本1,2,3,4需要将其中的主要文件autosub_xx.py中的代码做如下修改：
-<1>:if not os.path.isfile(filepath):
+<1>:
+```
+if not os.path.isfile(filepath):
         print("The given file does not exist: {}".format(filepath))
         raise Exception("Invalid filepath: {}".format(filepath))
     if not which("ffmpeg"):
         print("ffmpeg: Executable not found on machine.")
         raise Exception("Dependency not found: ffmpeg")
+```
 		
 	以上代码删除
 <2>：use_shell = True if os.name == "nt" else False
